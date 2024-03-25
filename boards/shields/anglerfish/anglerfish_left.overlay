@@ -1,4 +1,4 @@
-#include "jlli.dtsi"
+#include "anglerfish.dtsi"
 
 &kscan0 {
   col-gpios = <&pro_micro 18 GPIO_ACTIVE_HIGH>,

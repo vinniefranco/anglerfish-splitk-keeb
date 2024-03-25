@@ -1,4 +1,4 @@
-#include "jlli.dtsi"
+#include "anglerfish.dtsi"
 
 &default_transform {
   col-offset = <5>;
