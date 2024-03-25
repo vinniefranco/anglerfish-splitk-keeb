@@ -47,9 +47,9 @@
 // On the nice!nano documentation these are green DX pins:
 // https://nicekeyboards.com/docs/nice-nano/pinout-schematic
 //
-// Clock pin P0.17
+// Clock pin P0.24
 #define MOUSE_PS2_PIN_SCL_PRO_MICRO <&pro_micro 5 GPIO_ACTIVE_HIGH>
-// Data pin P0.22
+// Data pin P0.11.
 #define MOUSE_PS2_PIN_SDA_PRO_MICRO <&pro_micro 7 GPIO_ACTIVE_HIGH>
 
 
@@ -58,7 +58,7 @@
 // require, instead of using a trackpoint reset circuit.
 //
 // It's ok to use a low-frequency pin for this.
-//#define MOUSE_PS2_PIN_RST_PRO_MICRO <&pro_micro 3 GPIO_ACTIVE_HIGH>
+#define MOUSE_PS2_PIN_RST_PRO_MICRO <&pro_micro 6 GPIO_ACTIVE_HIGH>
 
 
 // Now configure the same SDA pin using the pinctrl notation.
