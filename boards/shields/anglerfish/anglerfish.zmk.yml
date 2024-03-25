@@ -1,6 +1,6 @@
 file_format: "1"
 id: anglerfish
-name: Anglerfish
+name: anglerfish
 type: shield
 url: https://github.com/vinniefranco
 requires:
