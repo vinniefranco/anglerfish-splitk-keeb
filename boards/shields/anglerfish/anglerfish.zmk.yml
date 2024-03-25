@@ -1,0 +1,15 @@
+file_format: "1"
+id: anglerfish
+name: Anglerfish
+type: shield
+url: https://github.com/vinniefranco
+requires:
+  - nice_nano_v2
+features:
+  - keys
+outputs:
+  - usb
+  - ble
+siblings:
+  - anglerfish_left
+  - anglerfish_right
