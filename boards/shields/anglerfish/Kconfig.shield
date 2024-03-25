@@ -5,4 +5,4 @@ config SHIELD_ANGLERFISH_LEFT
   def_bool $(shields_list_contains,anglerfish_left)
 
 config SHIELD_ANGLERFISH_RIGHT
-  def_bool $(shields_list_contains,allerfish_right)
+  def_bool $(shields_list_contains,anglerfish_right)
