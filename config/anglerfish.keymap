@@ -59,52 +59,62 @@
 
         cmb_under {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <26 27>;
+            key-positions = <27 28>;
+            layers = <VBASE>;
         };
 
         cmb_minus {
             bindings = <&kp MINUS>;
-            key-positions = <27 28>;
+            key-positions = <26 27>;
+            layers = <VBASE>;
         };
 
         cmb_tab {
             bindings = <&kp TAB>;
             key-positions = <1 8>;
+            layers = <VBASE>;
         };
 
         cmb_single {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <2 7>;
+            layers = <VBASE>;
         };
 
         cmb_dbl {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <3 6>;
+            layers = <VBASE>;
         };
 
         cmb_caps {
             bindings = <&caps_word>;
             key-positions = <23 26>;
+            layers = <VBASE>;
         };
 
         cmb_skinny {
             bindings = <&skinny_arrow>;
             key-positions = <13 16>;
+            layers = <VBASE>;
         };
 
         cmb_pipe {
             bindings = <&pipe_opr>;
             key-positions = <14 15>;
+            layers = <VBASE>;
         };
 
         cmb_save {
             bindings = <&vim_save>;
             key-positions = <30 1>;
+            layers = <VBASE>;
         };
 
         cmb_fat {
             bindings = <&fat_arrow>;
             key-positions = <13 16 17>;
+            layers = <VBASE>;
         };
     };
 
@@ -173,8 +183,8 @@
 
         code {
             bindings = <
-&kp ASTRK    &kp N7         &kp N8         &kp N9        &kp SLASH       &kp BSLH       &kp LT          &kp PIPE         &kp GT           &trans
-&kp MINUS    &kp N4         &kp N5         &kp N6        &kp PLUS        &kp PRCNT      &hmr RSHFT LBRC &hmr RCTRL RBRC  &hmr RALT COLON  &hmr RGUI SEMI
+&kp ASTRK    &kp N7         &kp N8         &kp N9        &kp SLASH       &kp BSLH       &kp LPAR        &kp RPAR         &kp PIPE         &trans
+&kp MINUS    &kp N4         &kp N5         &hml LSHFT N6 &kp PLUS        &kp PRCNT      &hmr RSHFT LBRC &hmr RCTRL RBRC  &hmr RALT COLON  &hmr RGUI SEMI
 &kp TILDE    &kp N1         &kp N2         &kp N3        &kp EQUAL       &kp LBKT       &kp RBKT        &trans           &trans           &trans
                                            &kp N0        &trans          &trans         &trans
             >;
