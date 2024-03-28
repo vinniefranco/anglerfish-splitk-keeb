@@ -1,6 +1,6 @@
-# Anglerfish 
+# Anglerfish Keyboard
 
-A 34 Key split staggered ortholinear keyboard with a trackpoint.
+Anglerfis, is a split keyboard with 3x5 column staggered keys, two thumb keys, and a trackpoint.
 
 ![Photo](assets/photo.jpg)
 
