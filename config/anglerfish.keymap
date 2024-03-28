@@ -107,7 +107,7 @@
 
         cmb_save {
             bindings = <&vim_save>;
-            key-positions = <1 8>;
+            key-positions = <0 9>;
             layers = <VBASE>;
         };
 
