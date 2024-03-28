@@ -105,12 +105,12 @@
             layers = <VBASE>;
         };
 
-        cmb_save {
-            bindings = <&vim_save>;
-            key-positions = <30 1>;
-            layers = <VBASE>;
-        };
-
+        // cmb_save {
+        //     bindings = <&vim_save>;
+        //     key-positions = <30 1>;
+        //     layers = <VBASE>;
+        // };
+        //
         cmb_fat {
             bindings = <&fat_arrow>;
             key-positions = <13 16 17>;
