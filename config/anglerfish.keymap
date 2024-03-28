@@ -14,14 +14,9 @@
 #define HAS_MOUSE_KEYS
 #define HAS_MOUSE_TP
 
-// Personal includes
-#ifdef HAS_MOUSE_KEYS
-     #include "includes/mouse_keys.dtsi"
-#endif
-
-#ifdef HAS_MOUSE_TP
-     #include "includes/mouse_tp.dtsi"
-#endif
+// Trackpoint includes
+#include "includes/mouse_keys.dtsi"
+#include "includes/mouse_tp.dtsi"
 
 / {
     behaviors {
@@ -192,8 +187,8 @@
 
         nav {
             bindings = <
-&trans      &trans         &mkp RCLK       &mkp LCLK     &trans          U_MMS_TP_S_I   U_MMS_TP_V6_I  U_MMS_TP_V6_D    &trans            U_MMS_RESET
-&kp LGUI    &kp LALT       &kp LCTRL       &kp LSHFT     &trans          U_MMS_TP_S_D   &kp LEFT       &kp DOWN         &kp UP            &kp RIGHT
+&trans      &trans         &mkp RCLK       &mkp LCLK     &trans          U_MSS_TP_S_I   U_MSS_TP_V6_I  U_MSS_TP_V6_D    &trans            U_MSS_RESET
+&kp LGUI    &kp LALT       &kp LCTRL       &kp LSHFT     &trans          U_MSS_TP_S_D   &kp LEFT       &kp DOWN         &kp UP            &kp RIGHT
 &trans      &trans         &kp RG(K_COPY)  &kp K_PASTE   &trans          &trans         &kp HOME       &kp END          &kp PAGE_DOWN     &kp PAGE_UP
                                            &trans        &trans          &trans         &trans
             >;
