@@ -107,7 +107,7 @@
 
         cmb_save {
             bindings = <&vim_save>;
-            key-positions = <0 9>;
+            key-positions = <1 31>;
             layers = <VBASE>;
         };
 
@@ -174,9 +174,9 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W          &kp F          &kp P         &kp B           &kp J          &kp L           &kp U            &kp Y           &lt VBLTH SEMI
+&lt VBLTH Q  &kp W          &kp F          &kp P         &kp B           &kp J          &kp L           &kp U            &kp Y           &lt VBLTH SEMI
 &hml LGUI A  &hml LALT R    &hml LCTRL S   &hml LSHFT T  &kp G           &kp M          &hmr RSHFT N    &hmr RCTRL E     &hmr RALT I     &hmr RGUI O
-&lt VBLTH Z  &kp X          &kp C          &kp D         &kp V           &kp K          &kp H           &kp COMMA        &kp PERIOD      &lt VMEDI SLASH
+&lt VFUNC Z  &kp X          &kp C          &kp D         &kp V           &kp K          &kp H           &kp COMMA        &kp PERIOD      &lt VMEDI SLASH
                                            &lt VNAVI ESC &kp SPACE       &lt VCODE RET  &kp BSPC
             >;
         };
@@ -185,7 +185,7 @@
             bindings = <
 &kp ASTRK    &kp N7         &kp N8         &kp N9        &kp SLASH       &kp BSLH       &kp LPAR        &kp RPAR         &kp PIPE         &trans
 &kp MINUS    &kp N4         &kp N5         &hml LSHFT N6 &kp PLUS        &kp PRCNT      &hmr RSHFT LBRC &hmr RCTRL RBRC  &hmr RALT COLON  &hmr RGUI SEMI
-&kp TILDE    &kp N1         &kp N2         &kp N3        &kp EQUAL       &kp LBKT       &kp RBKT        &trans           &trans           &trans
+&kp GRAVE    &kp N1         &kp N2         &kp N3        &kp EQUAL       &kp LBKT       &kp RBKT        &trans           &trans           &trans
                                            &kp N0        &trans          &trans         &trans
             >;
         };
@@ -210,10 +210,10 @@
 
         bt_control {
             bindings = <
-&trans      &trans        &trans          &trans         &trans         &bt BT_CLR      &none         &sys_reset        &bootloader       &trans
-&trans      &trans        &trans          &trans         &trans         &bt_0           &bt_1         &bt_2             &trans            &trans
-&trans      &trans        &trans          &trans         &trans         &trans          &trans        &trans            &trans            &trans
-                                          &trans         &trans         &trans          &trans
+&none       &none        &none            &none         &sys_reset       &sys_reset      &none         &none             &bt BT_CLR       &none
+&none       &none        &none            &none         &none            &bt_0           &bt_1         &bt_2             &none            &none
+&bootloader &none        &none            &none         &none            &none           &none         &none             &none            &bootloader
+                                          &none         &none            &none           &none
             >;
         };
 
