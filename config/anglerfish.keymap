@@ -192,8 +192,8 @@
 
         nav {
             bindings = <
-&trans      &trans         &mkp RCLK       &mkp LCLK     &trans          &trans         &trans         &trans           &trans            &trans
-&kp LGUI    &kp LALT       &kp LCTRL       &kp LSHFT     &trans          &trans         &kp LEFT       &kp DOWN         &kp UP            &kp RIGHT
+&trans      &trans         &mkp RCLK       &mkp LCLK     &trans          U_MMS_TP_S_I   U_MMS_TP_V6_I  U_MMS_TP_V6_D    &trans            U_MMS_RESET
+&kp LGUI    &kp LALT       &kp LCTRL       &kp LSHFT     &trans          U_MMS_TP_S_D   &kp LEFT       &kp DOWN         &kp UP            &kp RIGHT
 &trans      &trans         &kp RG(K_COPY)  &kp K_PASTE   &trans          &trans         &kp HOME       &kp END          &kp PAGE_DOWN     &kp PAGE_UP
                                            &trans        &trans          &trans         &trans
             >;
