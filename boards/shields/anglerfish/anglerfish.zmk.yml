@@ -2,7 +2,7 @@ file_format: "1"
 id: anglerfish
 name: anglerfish
 type: shield
-url: https://github.com/vinniefranco
+url: https://github.com/vinniefranco/anglerfish-splitk-keeb
 requires:
   - nice_nano_v2
 features:
