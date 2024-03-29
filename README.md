@@ -15,3 +15,5 @@ You can find all the step files for the case [here](assets/models)
 
 ### Build Guide
 Soon...
+
+IMPORTANT: When submitting the gerber for manufacturing, set the PCB thickness to 0.8mm.
