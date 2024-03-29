@@ -17,3 +17,6 @@ You can find all the step files for the case [here](assets/models)
 Soon...
 
 IMPORTANT: When submitting the gerber for manufacturing, set the PCB thickness to 0.8mm.
+
+### Gotchas
+Trackpoint ZMK support is bleeding edge. Thar be dragons.
