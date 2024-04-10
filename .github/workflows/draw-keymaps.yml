@@ -16,3 +16,4 @@ jobs:
       keymap_patterns: "config/*.keymap"        # path to the keymaps to parse
       config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
       output_folder: "keymap-drawer"            # path to save produced SVG and keymap YAML files
+      parse_args: "--qmk-layout LAYOUT_split_3x5_3"
