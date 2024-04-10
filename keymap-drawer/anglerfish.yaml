@@ -160,7 +160,7 @@ layers:
   - '&bt_2'
   - ''
   - ''
-  - '&bootloader'
+  - Boot
   - ''
   - ''
   - ''
@@ -169,7 +169,7 @@ layers:
   - ''
   - ''
   - ''
-  - '&bootloader'
+  - Boot
   - ''
   - ''
   - ''
@@ -192,7 +192,7 @@ combos:
   k: '"'
   l: [default]
 - p: [23, 26]
-  k: '&caps_word'
+  k: Caps Word
   l: [default]
 - p: [13, 16]
   k: '&skinny_arrow'

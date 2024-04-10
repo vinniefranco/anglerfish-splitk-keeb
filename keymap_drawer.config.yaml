@@ -179,3 +179,10 @@ parse_config:
     NUHS: '#'
     TILDE2: '~'
   zmk_combos: {}
+parse_config:
+    preprocess: true
+    raw_binding_map: 
+        "&bootloader": "Boot"
+        "&reset": "Reset"
+        "&caps_word": "Caps Word"
+    skip_binding_parsing: false
