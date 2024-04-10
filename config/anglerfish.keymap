@@ -9,7 +9,7 @@
 #define VNAVI 2
 #define VMEDI 3
 #define VBLTH 4
-#define VFUNC 4
+#define VFUNC 5
 
 #define HAS_MOUSE_KEYS
 #define HAS_MOUSE_TP
