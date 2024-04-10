@@ -4,7 +4,11 @@ Anglerfish, is a split keyboard with 3x5 column staggered keys, two thumb keys, 
 
 The Trackpoint can be placed on either side, and the PCB is a reversible design.
 
+---
+
 ![Photo](assets/photo.jpg)
+
+---
 
 ### Models
 You can find all the step files for the case [here](assets/models)
@@ -15,10 +19,14 @@ You can find all the step files for the case [here](assets/models)
 ### Default Firmware Keymap
 ![Keymap](keymap-drawer/anglerfish.svg)
 
+---
+
 ### Build Guide
 Soon...
 
-IMPORTANT: When submitting the gerber for manufacturing, set the PCB thickness to 0.8mm.
+> [!NOTE]\
+> IMPORTANT: When submitting the gerber for manufacturing, set the PCB thickness to 0.8mm.
 
-### Gotchas
-Trackpoint ZMK support is bleeding edge. Thar be dragons.
+> [!WARNING]\
+>  Gotchas
+> Trackpoint ZMK support is bleeding edge. Thar be dragons.
