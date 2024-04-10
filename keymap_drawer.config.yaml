@@ -181,14 +181,14 @@ parse_config:
 parse_config:
     preprocess: true
     raw_binding_map: 
-        "&bootloader": $$mdi:progress-download$$
-        "&sys_reset": 
-          type: bootloader
-          tap: $$mdi:backup-restore$$
-        "&caps_word": "CAPS WORD"
-        "&vim_save": "VIM SAVE"
-        "&bt_0": "BL PROFILE 1"
-        "&bt_1": "BL PROFILE 2"
-        "&bt_2": "BL PROFILE 3"
-        "&caps_word": $$mdi:alpha-w-box$$
+      "&bootloader": $$mdi:progress-download$$
+      "&sys_reset": 
+        type: bootloader
+        tap: $$mdi:backup-restore$$
+      "&caps_word": "CAPS WORD"
+      "&vim_save": "VIM SAVE"
+      "&bt_0": "BL PROFILE 1"
+      "&bt_1": "BL PROFILE 2"
+      "&bt_2": "BL PROFILE 3"
+      "&caps_word": $$mdi:alpha-w-box$$
     skip_binding_parsing: false
