@@ -17,4 +17,4 @@ jobs:
       config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
       output_folder: "keymap-drawer"            # path to save produced SVG and keymap YAML files
       draw_args: "anglerfish: '-j config/info.json'"
-
+      parse_args: "anglerfish: '-j config/info.json'"
