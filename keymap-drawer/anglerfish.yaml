@@ -20,7 +20,7 @@ layers:
   - {t: E, h: RCTRL}
   - {t: I, h: RALT}
   - {t: O, h: RGUI}
-  - {t: Z, h: bt_control}
+  - {t: Z, h: func}
   - X
   - C
   - D
@@ -144,8 +144,8 @@ layers:
   - ''
   - ''
   - ''
-  - '&sys_reset'
-  - '&sys_reset'
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - ''
   - ''
   - BT CLR
@@ -155,26 +155,60 @@ layers:
   - ''
   - ''
   - ''
-  - '&bt_0'
-  - '&bt_1'
-  - '&bt_2'
+  - BL PROFILE 1
+  - BL PROFILE 2
+  - BL PROFILE 3
   - ''
   - ''
-  - Boot
-  - ''
-  - ''
-  - ''
+  - $$mdi:progress-download$$
   - ''
   - ''
   - ''
   - ''
   - ''
-  - Boot
+  - ''
+  - ''
+  - ''
+  - $$mdi:progress-download$$
   - ''
   - ''
   - ''
   - ''
-  func: ['', F9, F10, F11, F12, '', '', '', '', '', '', F5, F6, F7, F8, '', '', '', '', '', '', F1, F2, F3, F4, '', '', '', '', '', '', '', '', '']
+  func:
+  - ''
+  - F9
+  - F10
+  - F11
+  - F12
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F5
+  - F6
+  - F7
+  - F8
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - F1
+  - F2
+  - F3
+  - F4
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
 combos:
 - p: [27, 28]
   k: _
@@ -192,7 +226,7 @@ combos:
   k: '"'
   l: [default]
 - p: [23, 26]
-  k: Caps Word
+  k: $$mdi:alpha-w-box$$
   l: [default]
 - p: [13, 16]
   k: '&skinny_arrow'
@@ -201,7 +235,7 @@ combos:
   k: '&pipe_opr'
   l: [default]
 - p: [1, 31]
-  k: '&vim_save'
+  k: VIM SAVE
   l: [default]
 - p: [13, 16, 17]
   k: '&fat_arrow'
