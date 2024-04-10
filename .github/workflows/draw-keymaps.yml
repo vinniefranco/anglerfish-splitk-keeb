@@ -5,7 +5,6 @@ on:
     paths:
       - "config/*.keymap"
       - "keymap_drawer.config.yaml"
-      # - 'boards/*/*/*.keymap'
 
 jobs:
   draw:
@@ -16,5 +15,6 @@ jobs:
       keymap_patterns: "config/*.keymap"        # path to the keymaps to parse
       config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
       output_folder: "keymap-drawer"            # path to save produced SVG and keymap YAML files
-      draw_args: "anglerfish: '-j config/info.json'"
-      parse_args: "anglerfish: '-j config/info.json'"
+      install_branch: main
+      ammend_commit: true
+      draw_args: "anglerfish:'`--ortho-layout {split: true, rows: 3, columns: 5, thumbs: 3}`'"
