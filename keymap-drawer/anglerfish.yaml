@@ -1,0 +1,242 @@
+layers:
+  default:
+  - {t: Q, h: bt_control}
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - {t: ;, h: bt_control}
+  - {t: A, h: LGUI}
+  - {t: R, h: LALT}
+  - {t: S, h: LCTRL}
+  - {t: T, h: LSHFT}
+  - G
+  - M
+  - {t: N, h: RSHFT}
+  - {t: E, h: RCTRL}
+  - {t: I, h: RALT}
+  - {t: O, h: RGUI}
+  - {t: Z, h: func}
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - {t: /, h: media}
+  - {t: ESC, h: nav}
+  - SPACE
+  - {t: RET, h: code}
+  - BSPC
+  code:
+  - '*'
+  - '7'
+  - '8'
+  - '9'
+  - /
+  - \
+  - (
+  - )
+  - '|'
+  - {t: ▽, type: trans}
+  - '-'
+  - '4'
+  - '5'
+  - {t: '6', h: LSHFT}
+  - +
+  - '%'
+  - {t: '{', h: RSHFT}
+  - {t: '}', h: RCTRL}
+  - {t: ':', h: RALT}
+  - {t: ;, h: RGUI}
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - '='
+  - '['
+  - ']'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  nav:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp RCLK'
+  - '&mkp LCLK'
+  - {t: ▽, type: trans}
+  - '&mms MS_TP_SENSITIVITY_INCR'
+  - '&mms MS_TP_VALUE6_INCR'
+  - '&mms MS_TP_VALUE6_DECR'
+  - {t: ▽, type: trans}
+  - '&mms MS_RESET'
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - {t: ▽, type: trans}
+  - '&mms MS_TP_SENSITIVITY_DECR'
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RG(K COPY)
+  - PASTE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - END
+  - PAGE DOWN
+  - PAGE UP
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  media:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PREV
+  - VOL DN
+  - PP
+  - VOL UP
+  - NEXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  bt_control:
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - ''
+  - ''
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BL PROFILE 1
+  - BL PROFILE 2
+  - BL PROFILE 3
+  - ''
+  - ''
+  - $$mdi:progress-download$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$mdi:progress-download$$
+  - ''
+  - ''
+  - ''
+  - ''
+  func:
+  - ''
+  - F9
+  - F10
+  - F11
+  - F12
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F5
+  - F6
+  - F7
+  - F8
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - F1
+  - F2
+  - F3
+  - F4
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+combos:
+- p: [27, 28]
+  k: _
+  l: [default]
+- p: [26, 27]
+  k: '-'
+  l: [default]
+- p: [1, 8]
+  k: TAB
+  l: [default]
+- p: [2, 7]
+  k: ''''
+  l: [default]
+- p: [3, 6]
+  k: '"'
+  l: [default]
+- p: [23, 26]
+  k: $$mdi:alpha-w-box$$
+  l: [default]
+- p: [13, 16]
+  k: '&skinny_arrow'
+  l: [default]
+- p: [14, 15]
+  k: '&pipe_opr'
+  l: [default]
+- p: [1, 31]
+  k: VIM SAVE
+  l: [default]
+- p: [13, 16, 17]
+  k: '&fat_arrow'
+  l: [default]
