@@ -169,55 +169,87 @@
 
         default_layer {
             bindings = <
-&lt VBLTH Q  &kp W          &kp F          &kp P         &kp B           &kp J          &kp L           &kp U            &kp Y           &lt VBLTH SEMI
-&hml LGUI A  &hml LALT R    &hml LCTRL S   &hml LSHFT T  &kp G           &kp M          &hmr RSHFT N    &hmr RCTRL E     &hmr RALT I     &hmr RGUI O
-&lt VFUNC Z  &kp X          &kp C          &kp D         &kp V           &kp K          &kp H           &kp COMMA        &kp PERIOD      &lt VMEDI SLASH
-                                           &lt VNAVI ESC &kp SPACE       &lt VCODE RET  &kp BSPC
+            
+
+// ╭───────────────┬─────────────┬────────────────┬─────────────────┬──────────────╮   ╭──────────────┬────────────────┬────────────────┬─────────────┬─────────────╮
+     &lt VBLTH Q     &kp W         &kp F            &kp P             &kp B              &kp J          &kp L            &kp U            &kp Y         &lt VBLTH SEMI
+// ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
+     &hml LGUI A     &hml LALT R   &hml LCTRL S     &hml LSHFT T      &kp G              &kp M          &hmr RSHFT N     &hmr RCTRL E     &hmr RALT I   &hmr RGUI O
+// ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
+     &lt VFUNC Z     &kp X         &kp C            &kp D             &kp V              &kp K          &kp H            &kp COMMA        &kp PERIOD    &lt VMEDI SLASH
+// ╰───────────────┴─────────────┴────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┴─────────────┴─────────────╯
+                                                    &lt VNAVI ESC     &kp SPACE          &lt VCODE RET  &kp BSPC
+//                                                ╰─────────────────┴──────────────╯   ╰──────────────┴────────────────╯
             >;
         };
 
         code {
             bindings = <
-&kp ASTRK    &kp N7         &kp N8         &kp N9        &kp SLASH       &kp BSLH       &kp LPAR        &kp RPAR         &kp PIPE         &trans
-&kp MINUS    &kp N4         &kp N5         &hml LSHFT N6 &kp PLUS        &kp PRCNT      &hmr RSHFT LBRC &hmr RCTRL RBRC  &hmr RALT COLON  &hmr RGUI SEMI
-&kp GRAVE    &kp N1         &kp N2         &kp N3        &kp EQUAL       &kp LBKT       &kp RBKT        &trans           &trans           &trans
-                                           &kp N0        &trans          &trans         &trans
+// ╭───────────────┬─────────────┬────────────────┬─────────────────┬──────────────╮   ╭──────────────┬────────────────┬────────────────┬─────────────┬─────────────╮
+     &kp ASTRK       &kp N7        &kp N8           &kp N9            &kp SLASH          &kp BSLH       &kp LPAR         &kp RPAR         &kp PIPE      &trans
+// ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
+     &kp MINUS       &kp N4        &kp N5           &hml LSHFT N6     &kp PLUS           &kp PRCNT      &hmr RSHFT LBRC  &hmr RCTRL RBRC  &hmr RALT COLON  &hmr RGUI SEMI
+// ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
+     &kp GRAVE       &kp N1        &kp N2           &kp N3            &kp EQUAL          &kp LBKT       &kp RBKT         &trans           &trans        &trans
+// ╰───────────────┴─────────────┴────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┴─────────────┴─────────────╯
+                                                    &kp N0            &trans             &trans         &trans
+//                                                ╰─────────────────┴──────────────╯   ╰──────────────┴────────────────╯
             >;
         };
 
         nav {
             bindings = <
-&trans      &trans         &mkp RCLK       &mkp LCLK     &trans          U_MSS_TP_S_I   U_MSS_TP_V6_I  U_MSS_TP_V6_D    &trans            U_MSS_RESET
-&kp LGUI    &kp LALT       &kp LCTRL       &kp LSHFT     &trans          U_MSS_TP_S_D   &kp LEFT       &kp DOWN         &kp UP            &kp RIGHT
-&trans      &trans         &kp RG(K_COPY)  &kp K_PASTE   &trans          &trans         &kp HOME       &kp END          &kp PAGE_DOWN     &kp PAGE_UP
-                                           &trans        &trans          &trans         &trans
+// ╭───────────────┬─────────────┬────────────────┬─────────────────┬──────────────╮   ╭──────────────┬────────────────┬────────────────┬─────────────┬─────────────╮
+     &trans          &trans        &mkp RCLK        &mkp LCLK         &trans             U_MSS_TP_S_I   U_MSS_TP_V6_I    U_MSS_TP_V6_D    &trans        U_MSS_RESET
+// ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
+     &kp LGUI        &kp LALT      &kp LCTRL        &kp LSHFT         &trans             U_MSS_TP_S_D   &kp LEFT         &kp DOWN         &kp UP        &kp RIGHT
+// ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
+     &trans          &trans        &kp RG(K_COPY)   &kp K_PASTE       &trans             &trans         &kp HOME         &kp END          &kp PAGE_DOWN &kp PAGE_UP
+// ╰───────────────┴─────────────┴────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┴─────────────┴─────────────╯
+                                                    &trans            &trans             &trans         &trans
+//                                                ╰─────────────────┴──────────────╯   ╰──────────────┴────────────────╯
             >;
         };
 
         media {
             bindings = <
-&trans      &trans         &trans          &trans        &trans          &trans         &trans        &trans            &trans            &trans
-&kp C_PREV  &kp C_VOL_DN   &kp C_PP        &kp C_VOL_UP  &kp C_NEXT      &trans         &trans        &trans            &trans            &trans
-&trans      &trans         &trans          &trans        &trans          &trans         &trans        &trans            &trans            &trans
-                                           &trans        &trans          &trans         &trans
+// ╭───────────────┬─────────────┬────────────────┬─────────────────┬──────────────╮   ╭──────────────┬────────────────┬────────────────┬─────────────┬─────────────╮
+     &trans          &trans        &trans           &trans            &trans             &trans         &trans           &trans           &trans        &trans
+// ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
+     &kp C_PREV      &kp C_VOL_DN  &kp C_PP         &kp C_VOL_UP      &kp C_NEXT         &trans         &trans           &trans           &trans        &trans
+// ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
+     &trans          &trans        &trans           &trans            &trans             &trans         &trans           &trans           &trans        &trans
+// ╰───────────────┴─────────────┴────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┴─────────────┴─────────────╯
+                                                    &trans            &trans             &trans         &trans
+//                                                ╰─────────────────┴──────────────╯   ╰──────────────┴────────────────╯
             >;
         };
 
         bt_control {
             bindings = <
-&none       &none        &none            &none         &sys_reset       &sys_reset      &none         &none             &bt BT_CLR       &none
-&none       &none        &none            &none         &none            &bt_0           &bt_1         &bt_2             &none            &none
-&bootloader &none        &none            &none         &none            &none           &none         &none             &none            &bootloader
-                                          &none         &none            &none           &none
+// ╭───────────────┬─────────────┬────────────────┬─────────────────┬──────────────╮   ╭──────────────┬────────────────┬────────────────┬─────────────┬─────────────╮
+     &none           &none         &none            &none             &sys_reset         &sys_reset     &none            &none            &bt BT_CLR    &none
+// ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
+     &none           &none         &none            &none             &none              &bt_0          &bt_1            &bt_2            &none         &none
+// ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
+     &bootloader     &none         &none            &none             &none              &none          &none            &none            &none         &bootloader
+// ╰───────────────┴─────────────┴────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┴─────────────┴─────────────╯
+                                                    &none             &none              &none          &none
+//                                                ╰─────────────────┴──────────────╯   ╰──────────────┴────────────────╯
             >;
         };
 
         func {
             bindings = <
-&kp F9      &kp F10       &kp F11         &kp F12        &none          &none           &none         &none             &none            &none 
-&kp F5      &kp F6        &kp F7          &kp F8         &none          &none           &none         &none             &none            &none
-&kp F1      &kp F2        &kp F3          &kp F4         &none          &none           &none         &none             &none            &none
-                                          &none          &none          &none           &none
+// ╭───────────────┬─────────────┬────────────────┬─────────────────┬──────────────╮   ╭──────────────┬────────────────┬────────────────┬─────────────┬─────────────╮
+     &kp F9          &kp F10       &kp F11          &kp F12           &none              &none          &none            &none            &none         &none 
+// ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
+     &kp F5          &kp F6        &kp F7           &kp F8            &none              &none          &none            &none            &none         &none
+// ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
+     &kp F1          &kp F2        &kp F3           &kp F4            &none              &none          &none            &none            &none         &none
+// ╰───────────────┴─────────────┴────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┴─────────────┴─────────────╯
+                                                    &none             &none              &none          &none
+//                                                ╰─────────────────┴──────────────╯   ╰──────────────┴────────────────╯
             >;
         };
     };
