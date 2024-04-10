@@ -13,7 +13,7 @@ You can find all the step files for the case [here](assets/models)
 [Build of materials](assets/bom.md)
 
 ### Default Firmware Keymap
-![Keymap](assets/keymap.svg)
+![Keymap](keymap-drawer/anglerfish.svg)
 
 ### Build Guide
 Soon...
