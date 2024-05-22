@@ -70,29 +70,29 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   nav:
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
-  - '&mkp RCLK'
-  - '&mkp LCLK'
-  - {t: ▽, type: trans}
-  - '&mms MS_TP_SENSITIVITY_INCR'
-  - '&mms MS_TP_VALUE6_INCR'
-  - '&mms MS_TP_VALUE6_DECR'
-  - {t: ▽, type: trans}
-  - '&mms MS_RESET'
+  - ''
   - LGUI
   - LALT
   - LCTRL
   - LSHFT
   - {t: ▽, type: trans}
-  - '&mms MS_TP_SENSITIVITY_DECR'
+  - ''
   - LEFT
   - DOWN
   - UP
   - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RG(K COPY)
+  - Gui+ COPY
   - PASTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
