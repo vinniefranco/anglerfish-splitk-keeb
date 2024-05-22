@@ -1,15 +1,16 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: urob
-      url-base: https://github.com/urob
-    - name: infused-kim
-      url-base: https://github.com/infused-kim
+      url-base: https://github.com/petejohanson
+    - name: inorichi
+      url-base: https://github.com/inorichi
   projects:
     - name: zmk
-      remote: infused-kim
-      revision: pr-testing/mouse_ps2_v2
+      remote: zmkfirmware
+      revision: feat/pointers-move-scroll
       import: app/west.yml
+    - name: zmk-pmw3610-driver
+      remote: inorichi
+      revision: main
   self:
     path: config
