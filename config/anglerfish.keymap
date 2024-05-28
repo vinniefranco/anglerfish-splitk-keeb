@@ -216,10 +216,10 @@
 
         mouse {
             bindings = <
-&none  &none      &msc SCRL_UP &msc SCRL_DOWN &none  &none  &none  &none  &none  &none
-&none  &mkp MCLK  &mkp RCLK    &mkp LCLK      &none  &none  &none  &none  &none  &none
-&none  &none      &none        &none          &none  &none  &none  &none  &none  &none
-                  &none        &none          &none  &none  &none
+&none  &none      &mwh SCROLL_UP  &mwh SCROLL_DOWN  &none  &none  &none  &none  &none  &none
+&none  &mkp MCLK  &mkp RCLK       &mkp LCLK         &none  &none  &none  &none  &none  &none
+&none  &none      &none           &none             &none  &none  &none  &none  &none  &none
+                  &none           &none             &none  &none  &none
             >;
         };
     };
