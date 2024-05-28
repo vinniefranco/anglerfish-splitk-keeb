@@ -1,7 +1,7 @@
 if SHIELD_ANGLERFISH_RIGHT
 
 config ZMK_KEYBOARD_NAME
-  default "anglerfish-tb"
+  default "AF-TB"
 
 config ZMK_SPLIT_ROLE_CENTRAL
   default y

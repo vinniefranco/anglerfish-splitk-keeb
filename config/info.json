@@ -1,6 +1,6 @@
 {
-  "id": "anglerfish",
-  "name": "anglerfish",
+  "id": "anglerfish-tb",
+  "name": "anglerfish-tb",
   "layouts": {
     "default_transform": {
       "name": "default_transform",
@@ -38,10 +38,11 @@
         { "row": 2, "col": 8, "x": 11.125, "y": 2.625 },
         { "row": 2, "col": 9, "x": 12.125, "y": 3.125 },
       
+        { "row": 3, "col": 2, "x":      3, "y": 3.725 },
         { "row": 3, "col": 3, "x":      4, "y": 3.725 },
-        { "row": 3, "col": 4, "x":  5.125, "y": 3.725 },
-        { "row": 3, "col": 5, "x":      7, "y": 3.725 },
-        { "row": 3, "col": 6, "x":  8.125, "y": 3.725 }
+        { "row": 3, "col": 4, "x":      5, "y": 3.725 },
+        { "row": 3, "col": 5, "x":      8, "y": 3.725 },
+        { "row": 3, "col": 6, "x":      9, "y": 3.725 }
       ]
     }
   },
