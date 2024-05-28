@@ -1,6 +1,6 @@
 # Anglerfish Keyboard
 
-Anglerfish, is a split keyboard with 3x5 column staggered keys, two thumb keys, and a trackpoint.
+Anglerfish, is a split keyboard with 3x5 column staggered keys, two thumb keys, and a trackball.
 
 The Trackpoint can be placed on either side, and the PCB is a reversible design.
 
