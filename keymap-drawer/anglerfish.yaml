@@ -218,8 +218,8 @@ layers:
   mouse:
   - ''
   - ''
-  - ''
-  - ''
+  - '&msc SCRL_UP'
+  - '&msc SCRL_DOWN'
   - ''
   - ''
   - ''
