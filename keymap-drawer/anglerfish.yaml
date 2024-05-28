@@ -30,6 +30,7 @@ layers:
   - ','
   - .
   - {t: /, h: media}
+  - ''
   - {t: ESC, h: nav}
   - SPACE
   - {t: RET, h: code}
@@ -65,6 +66,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - ''
   - '0'
   - {t: ▽, type: trans}
   - {type: held}
@@ -100,6 +102,7 @@ layers:
   - END
   - PAGE DOWN
   - PAGE UP
+  - ''
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -135,6 +138,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -174,6 +178,7 @@ layers:
   - ''
   - ''
   - ''
+  - ''
   func:
   - ''
   - F9
@@ -200,6 +205,7 @@ layers:
   - F2
   - F3
   - F4
+  - ''
   - ''
   - ''
   - ''
