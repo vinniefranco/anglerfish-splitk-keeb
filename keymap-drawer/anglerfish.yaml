@@ -218,8 +218,8 @@ layers:
   mouse:
   - ''
   - ''
-  - '&mwh SCROLL_UP'
-  - '&mwh SCROLL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_DOWN'
   - ''
   - ''
   - ''
