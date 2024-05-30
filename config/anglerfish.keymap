@@ -20,7 +20,7 @@
 
             #binding-cells = <2>;
             hold-trigger-on-release;
-            hold-trigger-key-positions = <32 33 31 30 25 26 27 28 29 19 18 17 16 15 5 6 7 8 9>;
+            hold-trigger-key-positions = <32 33 31 30 25 26 27 28 29 19 18 17 16 15 5 6 7 8 9 34>;
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
@@ -216,10 +216,10 @@
 
         mouse {
             bindings = <
-&none  &none      &msc SCRL_UP    &msc SCRL_DOWN  &none  &none  &none  &none  &none  &none
-&none  &mkp MCLK  &mkp RCLK       &mkp LCLK       &none  &none  &none  &none  &none  &none
-&none  &none      &none           &none           &none  &none  &none  &none  &none  &none
-                  &none           &none           &none  &none  &none
+&none  &none      &msc SCRL_UP  &msc SCRL_DOWN  &none  &none  &none  &none  &none  &none
+&none  &mkp MCLK  &mkp RCLK     &mkp LCLK       &none  &none  &none  &none  &none  &none
+&none  &none      &none         &none           &none  &none  &none  &none  &none  &none
+                  &none         &none           &none  &none  &none
             >;
         };
     };
