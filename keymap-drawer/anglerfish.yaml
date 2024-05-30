@@ -221,8 +221,8 @@ layers:
   - '&msc SCRL_UP'
   - '&msc SCRL_DOWN'
   - ''
-  - ''
-  - ''
+  - PAGE DOWN
+  - PAGE UP
   - ''
   - ''
   - ''
