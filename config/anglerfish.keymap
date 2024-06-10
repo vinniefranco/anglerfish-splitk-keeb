@@ -228,7 +228,7 @@
             bindings = <
 &none     &none      &msc SCRL_UP    &msc SCRL_DOWN    &none  &kp PAGE_DOWN  &kp PAGE_UP      &none      &none          &none
 &kp LGUI  &mkp MCLK  &mkp RCLK       &mkp LCLK         &none  &none          &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI
-&none     &none      &msc SCROLL_UP  &msc SCROLL_DOWN  &none  &none          &none            &none      &none          &none
+&none     &none      &msc SCRL_UP    &msc SCRL_DOWN    &none  &none          &none            &none      &none          &none
                      &none           &none             &none  &none          &none
             >;
         };
