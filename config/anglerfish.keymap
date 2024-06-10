@@ -34,7 +34,7 @@
 
             #binding-cells = <2>;
             hold-trigger-on-release;
-            hold-trigger-key-positions = <32 33 31 30 22 20 21 23 24 14 13 12 11 10 0 1 2 3 4>;
+            hold-trigger-key-positions = <32 33 31 30 22 20 21 23 24 14 13 12 11 10 0 1 2 3 4 34>;
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
@@ -103,6 +103,16 @@
             bindings = <&fat_arrow>;
             key-positions = <13 16 17>;
             layers = <VBASE>;
+        };
+
+        cmb_gt {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <21 28>;
+        };
+
+        cmb_lt {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <20 29>;
         };
     };
 
@@ -198,9 +208,9 @@
 
         bt_control {
             bindings = <
-&none        &none  &none  &none  &sys_reset  &sys_reset  &none  &none  &bt BT_CLR  &none
-&none        &none  &none  &none  &none       &bt_0       &bt_1  &bt_2  &none       &none
-&bootloader  &none  &none  &none  &none       &none       &none  &none  &none       &bootloader
+&none        &none  &none  &none  &sys_reset  &sys_reset  &out OUT_TOG  &none  &bt BT_CLR  &none
+&none        &none  &none  &none  &none       &bt_0       &bt_1         &bt_2  &none       &none
+&bootloader  &none  &none  &none  &none       &none       &none         &none  &none       &bootloader
                     &none  &none  &none       &none       &none
             >;
         };
@@ -216,10 +226,10 @@
 
         mouse {
             bindings = <
-&none  &none      &msc SCRL_UP  &msc SCRL_DOWN  &none  &kp PAGE_DOWN  &kp PAGE_UP      &none      &none          &none
-&none  &mkp MCLK  &mkp RCLK     &mkp LCLK       &none  &none          &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI
-&none  &none      &none         &none           &none  &none          &none            &none      &none          &none
-                  &none         &none           &none  &none          &none
+&none     &none      &msc SCRL_UP    &msc SCRL_DOWN    &none  &kp PAGE_DOWN  &kp PAGE_UP      &none      &none          &none
+&kp LGUI  &mkp MCLK  &mkp RCLK       &mkp LCLK         &none  &none          &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI
+&none     &none      &msc SCROLL_UP  &msc SCROLL_DOWN  &none  &none          &none            &none      &none          &none
+                     &none           &none             &none  &none          &none
             >;
         };
     };
