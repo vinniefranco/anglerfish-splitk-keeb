@@ -150,7 +150,7 @@ layers:
   - ''
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - ''
+  - OUT TOG
   - ''
   - BT CLR
   - ''
@@ -226,7 +226,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - LGUI
   - '&mkp MCLK'
   - '&mkp RCLK'
   - '&mkp LCLK'
@@ -238,8 +238,8 @@ layers:
   - RIGHT GUI
   - ''
   - ''
-  - ''
-  - ''
+  - '&msc SCROLL_UP'
+  - '&msc SCROLL_DOWN'
   - ''
   - ''
   - ''
@@ -282,3 +282,7 @@ combos:
 - p: [13, 16, 17]
   k: '&fat_arrow'
   l: [default]
+- p: [21, 28]
+  k: '>'
+- p: [20, 29]
+  k: <
