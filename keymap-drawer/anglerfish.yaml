@@ -238,8 +238,8 @@ layers:
   - RIGHT GUI
   - ''
   - ''
-  - '&msc SCROLL_UP'
-  - '&msc SCROLL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_DOWN'
   - ''
   - ''
   - ''

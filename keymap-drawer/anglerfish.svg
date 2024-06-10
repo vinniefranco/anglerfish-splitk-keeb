@@ -1206,13 +1206,13 @@ path.combo {
 <g transform="translate(200, 200)" class="key keypos-22">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em" style="font-size: 78%">&amp;msc</tspan><tspan x="0" dy="1.0em" style="font-size: 78%">SCROLL_UP</tspan>
+<tspan x="0" dy="-0.5em">&amp;msc</tspan><tspan x="0" dy="1.0em">SCRL_UP</tspan>
 </text>
 </g>
 <g transform="translate(280, 220)" class="key keypos-23">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em" style="font-size: 64%">&amp;msc</tspan><tspan x="0" dy="1.0em" style="font-size: 64%">SCROLL_DOWN</tspan>
+<tspan x="0" dy="-0.5em" style="font-size: 78%">&amp;msc</tspan><tspan x="0" dy="1.0em" style="font-size: 78%">SCRL_DOWN</tspan>
 </text>
 </g>
 <g transform="translate(360, 230)" class="key keypos-24">
