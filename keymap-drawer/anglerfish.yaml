@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: anglerfish}
 layers:
   default:
   - {t: Q, h: bt_control}
@@ -92,7 +93,7 @@ layers:
   - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RG(K COPY)
+  - Gui+COPY
   - PASTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

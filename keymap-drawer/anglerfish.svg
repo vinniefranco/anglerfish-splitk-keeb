@@ -78,8 +78,8 @@ text.footer {
     paint-order: stroke;
 }
 
-/* styling for combo tap, and key hold/shifted label text */
-text.combo, text.hold, text.shifted {
+/* styling for combo tap, and key non-tap label text */
+text.combo, text.hold, text.shifted, text.left, text.right {
     font-size: 11px;
 }
 
@@ -93,8 +93,20 @@ text.shifted {
     dominant-baseline: hanging;
 }
 
+text.left {
+    text-anchor: start;
+}
+
+text.right {
+    text-anchor: end;
+}
+
+text.layer-activator {
+    text-decoration: underline;
+}
+
 /* styling for hold/shifted label text in combo box */
-text.combo.hold, text.combo.shifted {
+text.combo.hold, text.combo.shifted, text.combo.left, text.combo.right {
     font-size: 8px;
 }
 
@@ -124,13 +136,14 @@ path.combo {
 /* End Tabler Icons Cleanup */
 </style>
 <g transform="translate(0, 0)" class="layer-default">
-<text x="0" y="0" class="label">default:</text>
+<text x="0" y="0" class="label" id="default">default:</text>
 <g transform="translate(0, 0)">
 <g transform="translate(40, 130)" class="key keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">Q</text>
-<text x="0" y="34" class="key hold"><tspan style="font-size: 70%">bt_control</tspan></text>
-</g>
+<a href="#bt_control">
+<text x="0" y="34" class="key hold layer-activator"><tspan style="font-size: 70%">bt_control</tspan></text>
+</a></g>
 <g transform="translate(120, 90)" class="key keypos-1">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">W</text>
@@ -166,8 +179,9 @@ path.combo {
 <g transform="translate(1010, 130)" class="key keypos-9">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">;</text>
-<text x="0" y="34" class="key hold"><tspan style="font-size: 70%">bt_control</tspan></text>
-</g>
+<a href="#bt_control">
+<text x="0" y="34" class="key hold layer-activator"><tspan style="font-size: 70%">bt_control</tspan></text>
+</a></g>
 <g transform="translate(40, 210)" class="key keypos-10">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">A</text>
@@ -219,8 +233,9 @@ path.combo {
 <g transform="translate(40, 290)" class="key keypos-20">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">Z</text>
-<text x="0" y="34" class="key hold">func</text>
-</g>
+<a href="#func">
+<text x="0" y="34" class="key hold layer-activator">func</text>
+</a></g>
 <g transform="translate(120, 250)" class="key keypos-21">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">X</text>
@@ -256,13 +271,15 @@ path.combo {
 <g transform="translate(1010, 290)" class="key keypos-29">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">/</text>
-<text x="0" y="34" class="key hold">media</text>
-</g>
+<a href="#media">
+<text x="0" y="34" class="key hold layer-activator">media</text>
+</a></g>
 <g transform="translate(360, 338)" class="key keypos-30">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">ESC</text>
-<text x="0" y="34" class="key hold">nav</text>
-</g>
+<a href="#nav">
+<text x="0" y="34" class="key hold layer-activator">nav</text>
+</a></g>
 <g transform="translate(450, 338)" class="key keypos-31">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
@@ -270,8 +287,9 @@ path.combo {
 <g transform="translate(600, 338)" class="key keypos-32">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">RET</text>
-<text x="0" y="34" class="key hold">code</text>
-</g>
+<a href="#code">
+<text x="0" y="34" class="key hold layer-activator">code</text>
+</a></g>
 <g transform="translate(690, 338)" class="key keypos-33">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">BSPC</text>
@@ -312,7 +330,7 @@ path.combo {
 <path d="M525,140 l-218,0" class="combo"/>
 <path d="M525,140 l218,0" class="combo"/>
 <rect rx="4" ry="4" x="507" y="122" width="36" height="36" class="combo"/>
-<text x="525" y="140" class="combo tap"><tspan style="font-size: 60%">&amp;skinny_arrow</tspan></text>
+<text x="525" y="140" class="combo tap"><tspan style="font-size: 64%">&amp;skinny_ar…</tspan></text>
 </g>
 <g class="combo combopos-7">
 <path d="M525,150 l-138,0" class="combo"/>
@@ -338,7 +356,7 @@ path.combo {
 </g>
 </g>
 <g transform="translate(0, 378)" class="layer-code">
-<text x="0" y="0" class="label">code:</text>
+<text x="0" y="0" class="label" id="code">code:</text>
 <g transform="translate(0, 0)">
 <g transform="translate(40, 130)" class="key keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -483,7 +501,7 @@ path.combo {
 </g>
 </g>
 <g transform="translate(0, 756)" class="layer-nav">
-<text x="0" y="0" class="label">nav:</text>
+<text x="0" y="0" class="label" id="nav">nav:</text>
 <g transform="translate(0, 0)">
 <g transform="translate(40, 130)" class="key trans keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
@@ -512,19 +530,19 @@ path.combo {
 <g transform="translate(690, 70)" class="key keypos-5">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em" style="font-size: 60%">&amp;mms</tspan><tspan x="0" dy="1.0em" style="font-size: 60%">MS_TP_SENSITIVITY_INCR</tspan>
+<tspan x="0" dy="-0.5em" style="font-size: 64%">&amp;mms</tspan><tspan x="0" dy="1.0em" style="font-size: 64%">MS_TP_SENS…</tspan>
 </text>
 </g>
 <g transform="translate(770, 60)" class="key keypos-6">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em" style="font-size: 60%">&amp;mms</tspan><tspan x="0" dy="1.0em" style="font-size: 60%">MS_TP_VALUE6_INCR</tspan>
+<tspan x="0" dy="-0.5em" style="font-size: 64%">&amp;mms</tspan><tspan x="0" dy="1.0em" style="font-size: 64%">MS_TP_VALU…</tspan>
 </text>
 </g>
 <g transform="translate(850, 40)" class="key keypos-7">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em" style="font-size: 60%">&amp;mms</tspan><tspan x="0" dy="1.0em" style="font-size: 60%">MS_TP_VALUE6_DECR</tspan>
+<tspan x="0" dy="-0.5em" style="font-size: 64%">&amp;mms</tspan><tspan x="0" dy="1.0em" style="font-size: 64%">MS_TP_VALU…</tspan>
 </text>
 </g>
 <g transform="translate(930, 90)" class="key trans keypos-8">
@@ -560,7 +578,7 @@ path.combo {
 <g transform="translate(690, 150)" class="key keypos-15">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em" style="font-size: 60%">&amp;mms</tspan><tspan x="0" dy="1.0em" style="font-size: 60%">MS_TP_SENSITIVITY_DECR</tspan>
+<tspan x="0" dy="-0.5em" style="font-size: 64%">&amp;mms</tspan><tspan x="0" dy="1.0em" style="font-size: 64%">MS_TP_SENS…</tspan>
 </text>
 </g>
 <g transform="translate(770, 140)" class="key keypos-16">
@@ -590,7 +608,7 @@ path.combo {
 <g transform="translate(200, 200)" class="key keypos-22">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em">RG(K</tspan><tspan x="0" dy="1.0em">COPY)</tspan>
+<tspan x="0" dy="-0.5em">Gui+</tspan><tspan x="0" dy="1.0em">COPY</tspan>
 </text>
 </g>
 <g transform="translate(280, 220)" class="key keypos-23">
@@ -643,7 +661,7 @@ path.combo {
 </g>
 </g>
 <g transform="translate(0, 1134)" class="layer-media">
-<text x="0" y="0" class="label">media:</text>
+<text x="0" y="0" class="label" id="media">media:</text>
 <g transform="translate(0, 0)">
 <g transform="translate(40, 130)" class="key trans keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
@@ -787,7 +805,7 @@ path.combo {
 </g>
 </g>
 <g transform="translate(0, 1512)" class="layer-bt_control">
-<text x="0" y="0" class="label">bt_control:</text>
+<text x="0" y="0" class="label" id="bt_control">bt_control:</text>
 <g transform="translate(0, 0)">
 <g transform="translate(40, 130)" class="key held keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key held"/>
@@ -842,22 +860,19 @@ path.combo {
 <g transform="translate(690, 150)" class="key keypos-15">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.0em">BL</tspan><tspan x="0" dy="1.0em">PROFILE</tspan>
-<tspan x="0" dy="1.0em">1</tspan>
+<tspan x="0" dy="-1.0em">BL</tspan><tspan x="0" dy="1.0em">PROFILE</tspan><tspan x="0" dy="1.0em">1</tspan>
 </text>
 </g>
 <g transform="translate(770, 140)" class="key keypos-16">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.0em">BL</tspan><tspan x="0" dy="1.0em">PROFILE</tspan>
-<tspan x="0" dy="1.0em">2</tspan>
+<tspan x="0" dy="-1.0em">BL</tspan><tspan x="0" dy="1.0em">PROFILE</tspan><tspan x="0" dy="1.0em">2</tspan>
 </text>
 </g>
 <g transform="translate(850, 120)" class="key keypos-17">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.0em">BL</tspan><tspan x="0" dy="1.0em">PROFILE</tspan>
-<tspan x="0" dy="1.0em">3</tspan>
+<tspan x="0" dy="-1.0em">BL</tspan><tspan x="0" dy="1.0em">PROFILE</tspan><tspan x="0" dy="1.0em">3</tspan>
 </text>
 </g>
 <g transform="translate(930, 170)" class="key keypos-18">
@@ -913,7 +928,7 @@ path.combo {
 </g>
 </g>
 <g transform="translate(0, 1890)" class="layer-func">
-<text x="0" y="0" class="label">func:</text>
+<text x="0" y="0" class="label" id="func">func:</text>
 <g transform="translate(0, 0)">
 <g transform="translate(40, 130)" class="key keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
